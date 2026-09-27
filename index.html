@@ -3,549 +3,307 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft</title>
-    <style>
-        @font-face {
-            font-family: segoeui;
-            src: url(fonts/SegoeUI.ttf);
-        }
-
-        * {
-            margin: 0;
-        }
-
-        body {
-            font-family: "segoeui";
-            font-size: 16px;
-            font-weight: normal;
-            background-color: #fff;
-        }
-
-        a {
-            color: #000;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        #header-logo-link {
-            padding: 15px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: 75px;
-        }
-
-        #header-logo {
-            width: 108px;
-        }
-
-        .header-link {
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 13px;
-            font-weight: 500;
-            color: #000;
-            text-decoration: none;
-            padding: 15px 8px;
-        }
-
-        .header-link:hover {
-            text-decoration: underline;
-        }
-
-        .buynow {
-            background-color: #6B0E34;
-            text-align: center;
-            padding: 16px 24px;
-        }
-
-        .buynow-title {
-            color: #fff;
-            width: 100%;
-        }
-
-        .buynow-title:hover {
-            text-decoration: underline;
-        }
-
-        #banner-header {
-            width: 100%;
-        }
-
-        .container {
-            width: 90%;
-            margin: 60px auto 0;
-            text-align: center;
-        }
-
-        .shop-options {
-            width: auto;
-            display: inline-block;
-            font-weight: bold;
-            text-align: center;
-            padding: 16px 24px;
-        }
-
-        .shop-options-logo {
-            width: 40px;
-            margin-bottom: 8px;
-        }
-
-        .shop-options-link {
-            display: block;
-        }
-
-        .store-box {
-            margin-top: 60px;
-            vertical-align: top;
-        }
-        
-        .store-options {
-            display: inline-block;
-            width: 310px;
-            margin: 0 auto;
-            padding: 0 13px;
-            text-align: left;
-            height: 100%;
-            vertical-align: top;
-        }
-
-        .store-options-logo {
-            width: 100%;
-            margin-bottom: 32px;
-        }
-
-        .store-options-h {
-            margin-bottom: 16px;
-        }
-
-        .store-options-p {
-            margin-bottom: 16px;
-            font-weight: normal;
-            line-height: 25px;
-        }
-
-        .store-options-link {
-            color: #6B0E34;
-            display: block;
-        }
-
-        .store-options-link:hover {
-            text-decoration: underline;
-        }
-
-        #store-options-logo {
-            margin: 0;
-        }
-
-        #new-collection {
-            display: inline-block;
-            padding: 6px 12px;
-            background-color: #6B0E34;
-            color: #fff;
-        }
-
-        .middle-banner-box {
-            margin-top: 60px;
-        }
-
-        .middle-banner {
-            width: 100%;
-        }
-
-        #business-header {
-            font-size: 37px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .follow-box {
-            margin-top: 60px;
-            text-align: left;
-        }
-
-        .follow-p {
-            margin-right: 12px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .follow-logo {
-            width: 32px;
-            vertical-align: middle;
-            margin-right: 12px;
-        }
-
-        .btn-box {
-            text-align: right;
-        }
-
-        #btn {
-            padding: 10px 12px;
-            background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15));
-            border-radius: 2px;
-            transition: 100ms;
-        }
-        
-        #btn:hover {
-            background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
-            box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
-        }
-
-        .footer {
-            padding: 0 75px;
-            color: #616161;
-            background-color: #f4f4f4;
-            margin-top: 60px;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .footer-items {
-            display: inline-block;
-            text-align: left;
-            line-height: 30px;
-            width: 220px;
-            vertical-align: middle;
-        }
-
-        .footer-p {
-            font-size: 15px;
-            font-weight: 600;
-            padding: 36px 0 4px;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            list-style-type: none;
-            font-size: 11px;
-        }
-
-        .footer-link {
-            font-weight: 500;
-            color: #616161;
-        }
-
-        .footer-link:hover {
-            color: #000;
-            text-decoration: underline;
-        }
-
-        .footer-copyright {
-            padding: 30px 0 16px;
-            font-size: 11px;
-        }
-
-        .copyright {
-            width: 69%;
-            display: inline-block;
-            text-align: right;
-            vertical-align: middle;
-        }
-
-        .info {
-            width: 29%;
-            display: inline-block;
-            text-align: left;
-            vertical-align: middle;
-        }
-
-        .footer-copyright-link {
-            padding: 0 24px 14 0;
-            padding-right: 24px;
-        }
-
-        #ypc {
-            color: #000;
-            font-weight: 500;
-        }
-        #ypc:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Microsoft - Official Home Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- header -->
-    <div class="header">
-        <a href="https://www.microsoft.com/en-us/" id="header-logo-link"><img src="images/logo-header.png"
-                alt="Microsoft logo" id="header-logo"></a>
-        <a href="https://www.microsoft.com/ar/microsoft-365?SilentAuth=1&wa=wsignin1.0&rtc=1"
-            class="header-link">Microsoft 365</a>
-        <a href="https://www.microsoft.com/ar/microsoft-teams/group-chat-software?rtc=1" class="header-link">Teams</a>
-        <a href="https://copilot.microsoft.com/" class="header-link">Copilot</a>
-        <a href="https://www.microsoft.com/en-us/windows?wa=wsignin1.0" class="header-link">Windows</a>
-        <a href="https://www.microsoft.com/en-us/surface" class="header-link">Surface</a>
-        <a href="https://www.xbox.com/en-US/" class="header-link">Xbox</a>
-        <a href="https://www.microsoft.com/en-us/store/b/sale?icid=gm_nav_L0_salepage" class="header-link">Deals</a>
-        <a href="https://www.microsoft.com/en-us/store/b/business" class="header-link">Small Business</a>
-        <a href="https://support.microsoft.com/en-us" class="header-link">Support</a>
-    </div>
+<body id="page-top">
 
-    <!-- second header -->
-    <div class="buynow">
-        <a href="https://www.microsoft.com/en-us/store/b/sale?icid=mscom_marcom_TS1a_ReturnsHoliday24"
-            class="buynow-title">Buy now, pay later. As low as 0% APR + free 60-day returns</a>
-    </div>
-
-    <!-- banner header -->
-    <a href="https://www.microsoft.com/en-us/d/surface-pro-9/93VKD8NP4FVK?icid=mscom_marcom_H2a_SurfacePro9Offer&activetab=pivot:overviewtab">
-        <img src="images/banner-header.webp" alt="banner" id="banner-header">
-    </a>
-
-    <!-- shop options -->
-    <div class="container">
-        <div class="shop-options-box">
-            <div class="shop-options">
-                <a href="https://www.microsoft.com/en-us/store/b/shop-all-microsoft-surface?icid=MSCOM_QL_Surface">
-                    <img src="images/shop-surface-device.svg" alt="shop" class="shop-options-logo">
-                    <a href="https://www.microsoft.com/en-us/store/b/shop-all-microsoft-surface?icid=MSCOM_QL_Surface" class="shop-options-link">Shop Surface devices</a>
-                </a>
-            </div>
-    
-            <div class="shop-options">
-                <a href="https://www.microsoft.com/en-us/store/b/xbox?icid=MSCOM_QL_Xbox">
-                    <img src="images/shop-xbox-games.svg" alt="shop" class="shop-options-logo">
-                    <a href="https://www.microsoft.com/en-us/store/b/xbox?icid=MSCOM_QL_Xbox" class="shop-options-link">Shop Xbox games and consoles</a>
-                </a>
-            </div>
-    
-            <div class="shop-options">
-                <a href="https://www.microsoft.com/en-us/store/b/accessories?icid=MSCOM_QL_Accessories">
-                    <img src="images/shop-accessories.svg" alt="shop" class="shop-options-logo">
-                    <a href="https://www.microsoft.com/en-us/store/b/accessories?icid=MSCOM_QL_Accessories" class="shop-options-link">Shop for accessories</a>
-                </a>
-            </div>
-    
-            <div class="shop-options">
-                <a href="https://www.microsoft.com/en-us/store/b/business?icid=MSCOM_QL_Business">
-                    <img src="images/shop-business.svg" alt="shop" class="shop-options-logo">
-                    <a href="https://www.microsoft.com/en-us/store/b/business?icid=MSCOM_QL_Business" class="shop-options-link">Shop for your business</a>
-                </a>
-            </div>
-    
-            <div class="shop-options">
-                <a href="https://www.microsoft.com/EN-US/microsoft-365/compare-all-microsoft-365-products?icid=MSCOM_QL_M365">
-                    <img src="images/choose-microsoft-365.svg" alt="shop" class="shop-options-logo">
-                    <a href="https://www.microsoft.com/EN-US/microsoft-365/compare-all-microsoft-365-products?icid=MSCOM_QL_M365" class="shop-options-link">Choose your Microsoft 365</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="store-box">
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5">
-                    <img src="images/surface-laptop-5.webp" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h">Surface Laptop 5</h2>
-                    <p class="store-options-p">Sleek portability and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
-                    <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5" class="store-options-link">Shop Surface Laptop 5</a>
-                </a>
-            </div>
-
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5">
-                    <img src="images/surface-laptop-studio-2.webp" alt="surface laptop 5" class="store-options-logo" id="store-options-logo">
-                    <p id="new-collection">New</p>
-                    <h2 class="store-options-h">Save up to $400 on Surface Laptop Studio 2</h2>
-                    <p class="store-options-p">Cutting-edge design meets incredible performance in this versatile laptop perfect for everything from creativity to entertainment. Select devices on sale now. Offer ends 1/7.</p>
-                    <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5" class="store-options-link">Shop Surface Laptop Studio 2</a>
-                </a>
-            </div>
-
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5">
-                    <img src="images/xbox-series-x.webp" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h">Xbox Series X</h2>
-                    <p class="store-options-p">The fastest, most powerful Xbox ever.</p>
-                    <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5" class="store-options-link">Shop Xbox Series X</a>
-                </a>
-            </div>
-
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5">
-                    <img src="images/xbox-series-x.webp" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h">Power your dreams</h2>
-                    <p class="store-options-p">Introducing Xbox Series S in Carbon Black, now with a 1 TB SSD. Experience next-gen speed and performance.</p>
-                    <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN?icid=mscom_marcom_CPH1a_SurfaceLaptop5" class="store-options-link">Shop now</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="middle-banner-box">
-            <a href="https://www.microsoft.com/en-us/store/collections/XboxControllers?icid=mscom_marcom_MPH1a_XboxControllers">
-                <img src="images/xbox-controllers.jpg" alt="xbox banner" class="middle-banner">
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="https://www.microsoft.com/en-us/" class="header-logo-link" aria-label="Microsoft homepage">
+                <img src="images/logo-header.png" alt="Microsoft Logo" class="header-logo">
             </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="https://www.microsoft.com/microsoft-365" class="nav-link">Microsoft 365</a></li>
+                    <li><a href="https://www.microsoft.com/microsoft-teams/group-chat-software"
+                            class="nav-link">Teams</a></li>
+                    <li><a href="https://copilot.microsoft.com/" class="nav-link">Copilot</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/windows" class="nav-link">Windows</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/surface" class="nav-link">Surface</a></li>
+                    <li><a href="https://www.xbox.com/en-US/" class="nav-link">Xbox</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/store/b/sale" class="nav-link">Deals</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/store/b/business" class="nav-link">Small Business</a>
+                    </li>
+                    <li><a href="https://support.microsoft.com/en-us" class="nav-link">Support</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="store-box">
-            <h2 id="business-header">For business</h2>
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/d/surface-pro-9-for-business/8XJC219DG79Z?icid=mscom_marcom_CPW1a_SurfacePro9Business">
-                    <img src="images/surface-pro-9.jpg" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h" style="font-size: 29px;">Surface Pro 9 for Business</h2>
-                    <p class="store-options-p">Get next-level security with Surface Pro 9 for Business and Windows 11 Pro to help ensure your information is protected.<p>
-                    <a href="https://www.microsoft.com/en-us/d/surface-pro-9-for-business/8XJC219DG79Z?icid=mscom_marcom_CPW1a_SurfacePro9Business" class="store-options-link">Surface Pro 9 for Business</a>
-                </a>
-            </div>
+    <!-- Notification Banner -->
+    <aside class="promo-bar">
+        <a href="https://www.microsoft.com/en-us/store/b/sale" class="promo-link">
+            Buy now, pay later. As low as 0% APR + free 60-day returns
+        </a>
+    </aside>
 
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-365-business-standard-one-month-trial?icid=mscom_marcom_CPW2a_M365forBusiness&activetab=tab%3aprimaryr2">
-                    <img src="images/try-microsoft-365.webp" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h" style="font-size: 29px;">Try Microsoft 365 for free</h2>
-                    <p class="store-options-p">Get Microsoft Teams, secure cloud storage, and premium apps across devices with a free one-month Microsoft 365 Business Standard trial.</p>
-                    <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-365-business-standard-one-month-trial?icid=mscom_marcom_CPW2a_M365forBusiness&activetab=tab%3aprimaryr2" class="store-options-link">Start your free trial</a>
-                </a>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <a href="https://www.microsoft.com/en-us/d/surface-pro-9/93VKD8NP4FVK" class="hero-link">
+            <img src="images/banner-header.webp" alt="Surface Pro 9 offer" class="banner-img">
+        </a>
+    </section>
 
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/ai?icid=mscom_marcom_CPW3a_AzureAI">
-                    <img src="images/join-era-ai.jpg" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h" style="font-size: 29px;">Join the era of Al</h2>
-                    <p class="store-options-p">Create, communicate, and code with the latest Microsoft Al solutions.</p>
-                    <a href="https://www.microsoft.com/en-us/ai?icid=mscom_marcom_CPW3a_AzureAI" class="store-options-link">Explore Al solutions</a>
-                </a>
-            </div>
+    <!-- Main Content Area -->
+    <main class="page-container">
 
-            <div class="store-options">
-                <a href="https://www.microsoft.com/en-us/windows-365?icid=mscom_marcom_CPW4a_Windows365">
-                    <img src="images/welcome-to-windows.webp" alt="surface laptop 5" class="store-options-logo">
-                    <h2 class="store-options-h" style="font-size: 29px;">Welcome to your Windows 365 Cloud PC</h2>
-                    <p class="store-options-p">Securely stream your Windows experience from the Microsoft cloud to any device.</p>
-                    <a href="https://www.microsoft.com/en-us/windows-365?icid=mscom_marcom_CPW4a_Windows365" class="store-options-link">Get it today</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="middle-banner-box">
-            <a href="https://unlocked.microsoft.com/88-rising/?icid=mscom_marcom_SAM2a_88Rising">
-                <img src="images/banner-footer.webp" alt="banner AI" class="middle-banner">
+        <!-- Quick Navigation Icons -->
+        <section class="quick-links">
+            <a href="https://www.microsoft.com/en-us/store/b/shop-all-microsoft-surface" class="quick-link-item">
+                <img src="images/shop-surface-device.svg" alt="" class="quick-link-icon" aria-hidden="true">
+                <span>Shop Surface devices</span>
             </a>
+            <a href="https://www.microsoft.com/en-us/store/b/xbox" class="quick-link-item">
+                <img src="images/shop-xbox-games.svg" alt="" class="quick-link-icon" aria-hidden="true">
+                <span>Shop Xbox games and consoles</span>
+            </a>
+            <a href="https://www.microsoft.com/en-us/store/b/accessories" class="quick-link-item">
+                <img src="images/shop-accessories.svg" alt="" class="quick-link-icon" aria-hidden="true">
+                <span>Shop for accessories</span>
+            </a>
+            <a href="https://www.microsoft.com/en-us/store/b/business" class="quick-link-item">
+                <img src="images/shop-business.svg" alt="" class="quick-link-icon" aria-hidden="true">
+                <span>Shop for your business</span>
+            </a>
+            <a href="https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-products"
+                class="quick-link-item">
+                <img src="images/choose-microsoft-365.svg" alt="" class="quick-link-icon" aria-hidden="true">
+                <span>Choose your Microsoft 365</span>
+            </a>
+        </section>
+
+        <!-- Consumer Products Grid -->
+        <section class="cards-grid">
+            <article class="product-card">
+                <img src="images/surface-laptop-5.webp" alt="Surface Laptop 5" class="product-card-img">
+                <div class="product-card-content">
+                    <h3>Surface Laptop 5</h3>
+                    <p>Sleek portability and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                    <a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN" class="action-link">Shop
+                        Surface Laptop 5 &gt;</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/surface-laptop-studio-2.webp" alt="Surface Laptop Studio 2" class="product-card-img">
+                <div class="product-card-content">
+                    <span class="badge">New</span>
+                    <h3>Save up to $400 on Surface Laptop Studio 2</h3>
+                    <p>Cutting-edge design meets incredible performance in this versatile laptop perfect for work and
+                        play.</p>
+                    <a href="https://www.microsoft.com/en-us/d/Surface-Laptop-Studio-2/8rqr54krf1dz"
+                        class="action-link">Shop Surface Laptop Studio 2 &gt;</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/xbox-series-x.webp" alt="Xbox Series X" class="product-card-img">
+                <div class="product-card-content">
+                    <h3>Xbox Series X</h3>
+                    <p>The fastest, most powerful Xbox console ever built.</p>
+                    <a href="https://www.xbox.com/en-US/consoles/xbox-series-x" class="action-link">Shop Xbox Series X
+                        &gt;</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/xbox-series-x.webp" alt="Xbox Series S Carbon Black" class="product-card-img">
+                <div class="product-card-content">
+                    <h3>Power your dreams</h3>
+                    <p>Introducing Xbox Series S in Carbon Black, now with a 1 TB SSD. Next-gen speed and performance.
+                    </p>
+                    <a href="https://www.xbox.com/en-US/consoles/xbox-series-s" class="action-link">Shop now &gt;</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Mid-Page Banner -->
+        <section class="banner-section">
+            <a href="https://www.microsoft.com/en-us/store/collections/XboxControllers">
+                <img src="images/xbox-controllers.jpg" alt="Xbox wireless controllers collection" class="banner-img">
+            </a>
+        </section>
+
+        <!-- Business Section Grid -->
+        <section class="business-section">
+            <h2 class="section-title">For business</h2>
+            <div class="cards-grid">
+                <article class="product-card">
+                    <img src="images/surface-pro-9.jpg" alt="Surface Pro 9 for Business" class="product-card-img">
+                    <div class="product-card-content">
+                        <h3>Surface Pro 9 for Business</h3>
+                        <p>Get next-level security with Surface Pro 9 for Business and Windows 11 Pro to keep data safe.
+                        </p>
+                        <a href="https://www.microsoft.com/en-us/d/surface-pro-9-for-business/8XJC219DG79Z"
+                            class="action-link">Surface Pro 9 for Business &gt;</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/try-microsoft-365.webp" alt="Microsoft 365 free trial" class="product-card-img">
+                    <div class="product-card-content">
+                        <h3>Try Microsoft 365 for free</h3>
+                        <p>Get Microsoft Teams, cloud storage, and premium apps with a free one-month trial.</p>
+                        <a href="https://www.microsoft.com/en-us/microsoft-365/business" class="action-link">Start your
+                            free trial &gt;</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/join-era-ai.jpg" alt="Microsoft AI solutions" class="product-card-img">
+                    <div class="product-card-content">
+                        <h3>Join the era of AI</h3>
+                        <p>Create, communicate, and code faster with the latest Microsoft AI solutions.</p>
+                        <a href="https://www.microsoft.com/en-us/ai" class="action-link">Explore AI solutions &gt;</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/welcome-to-windows.webp" alt="Windows 365 Cloud PC" class="product-card-img">
+                    <div class="product-card-content">
+                        <h3>Welcome to Windows 365 Cloud PC</h3>
+                        <p>Securely stream your Windows experience from the Microsoft cloud to any device.</p>
+                        <a href="https://www.microsoft.com/en-us/windows-365" class="action-link">Get it today &gt;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bottom Feature Banner -->
+        <section class="banner-section">
+            <a href="https://unlocked.microsoft.com/88-rising/">
+                <img src="images/banner-footer.webp" alt="Microsoft Unlocked campaign banner" class="banner-img">
+            </a>
+        </section>
+
+        <!-- Social & Back to Top Row -->
+        <div class="utility-row">
+            <div class="social-links">
+                <span>Follow Microsoft</span>
+                <a href="https://www.facebook.com/Microsoft" aria-label="Facebook">
+                    <img src="images/follow-facebook.webp" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://twitter.com/microsoft" aria-label="Twitter">
+                    <img src="images/follow-twitter.webp" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/company/microsoft" aria-label="LinkedIn">
+                    <img src="images/follow-linkdin.webp" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+
+            <div class="back-to-top">
+                <a href="#page-top" class="top-btn">Back to top ↑</a>
+            </div>
         </div>
 
-        <div class="follow-box">
-            <p class="follow-p">Follow Microsoft</p>
-            <a href="https://www.facebook.com/Microsoft"><img src="images/follow-facebook.webp" alt="follow facebook" class="follow-logo"></a>
-            <a href="https://twitter.com/microsoft"><img src="images/follow-twitter.webp" alt="follow facebook" class="follow-logo"></a>
-            <a href="https://www.linkedin.com/company/microsoft"><img src="images/follow-linkdin.webp" alt="follow facebook" class="follow-logo"></a>
-        </div>
+    </main>
 
-        <div class="btn-box">
-            <a href="#page-top" id="btn">Back to top</a>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-links-grid">
+            <div class="footer-col">
+                <h4>What's new</h4>
+                <ul>
+                    <li><a href="https://www.microsoft.com/en-us/d/Surface-Laptop-Studio-2/8rqr54krf1dz">Surface Laptop
+                            Studio 2</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/d/Surface-Laptop-Go-3/8p0wwgj6c6l2">Surface Laptop Go
+                            3</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/d/surface-pro-9/93VKD8NP4FVK">Surface Pro 9</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN">Surface Laptop 5</a>
+                    </li>
+                    <li><a href="https://www.microsoft.com/en-us/d/surface-studio-2plus/8VLFQC3597K4">Surface Studio
+                            2+</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/windows/copilot-ai-features">Copilot in Windows</a>
+                    </li>
+                </ul>
+            </div>
 
-    <!-- footer -->
-    <div class="footer">
-        <div class="footer-options">
-            <div class="footer-items">
-                <p class="footer-p">What's new</p>
+            <div class="footer-col">
+                <h4>Microsoft Store</h4>
                 <ul>
-                    <li><a href="https://www.microsoft.com/en-us/d/Surface-Laptop-Studio-2/8rqr54krf1dz" class="footer-link">Surface Laptop Studio 2</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/d/Surface-Laptop-Go-3/8p0wwgj6c6l2" class="footer-link">Surface Laptop Go 3</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/d/surface-pro-9/93VKD8NP4FVK" class="footer-link">Surface Pro 9</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/d/surface-laptop-5/8XN49V61S1BN" class="footer-link">Surface Laptop 5</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/d/surface-studio-2plus/8VLFQC3597K4" class="footer-link">Surface Studio 2+</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/windows/copilot-ai-features" class="footer-link">Copilot in Windows</a></li>
-                    <li><a href="https://www.microsoft.com/microsoft-365" class="footer-link">Microsoft 365</a></li>
-                    <li><a href="https://www.microsoft.com/windows/windows-11-apps" class="footer-link">Windows 11 apps</a></li>
+                    <li><a href="https://account.microsoft.com/">Account profile</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/download">Download Center</a></li>
+                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749">Microsoft Store support</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/store/b/returns">Returns</a></li>
+                    <li><a href="https://account.microsoft.com/orders">Order tracking</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/store/b/certified-refurbished-products">Certified
+                            Refurbished</a></li>
                 </ul>
             </div>
-    
-            <div class="footer-items">
-                <p class="footer-p">Microsoft Store</p>
+
+            <div class="footer-col">
+                <h4>Education</h4>
                 <ul>
-                    <li><a href="https://account.microsoft.com/" class="footer-link">Account profile</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/download" class="footer-link">Download Center</a></li>
-                    <li><a href="https://go.microsoft.com/fwlink/?linkid=2139749" class="footer-link">Microsoft Store support</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/returns" class="footer-link">Returns</a></li>
-                    <li><a href="https://account.microsoft.com/orders" class="footer-link">Order tracking</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/certified-refurbished-products" class="footer-link">Certified Refurbished</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020" class="footer-link">Microsoft Store Promise</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/payment-financing-options?icid=footer_financing_vcc" class="footer-link">Flexible Payments</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/education">Microsoft in education</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/education/devices/overview">Devices for education</a>
+                    </li>
+                    <li><a href="https://www.microsoft.com/en-us/education/products/teams">Teams for Education</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365">Microsoft 365
+                            Education</a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/free/students/">Azure for students</a></li>
                 </ul>
             </div>
-    
-            <div class="footer-items">
-                <p class="footer-p">Education</p>
+
+            <div class="footer-col">
+                <h4>Business</h4>
                 <ul>
-                    <li><a href="https://www.microsoft.com/en-us/education" class="footer-link">Microsoft in education</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/education/devices/overview" class="footer-link">Devices for education</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/education/products/teams" class="footer-link">Microsoft Teams for Education</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365" class="footer-link">Microsoft 365 Education</a></li>
-                    <li><a href="https://www.microsoft.com/education/how-to-buy" class="footer-link">How to buy for your school</a></li>
-                    <li><a href="https://education.microsoft.com/" class="footer-link">Educator training and development</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/education" class="footer-link">Deals for students and parents</a></li>
-                    <li><a href="https://azure.microsoft.com/en-us/free/students/" class="footer-link">Azure for students</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/microsoft-cloud">Microsoft Cloud</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/security">Microsoft Security</a></li>
+                    <li><a href="https://dynamics.microsoft.com/en-us/">Dynamics 365</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/microsoft-365/business/">Microsoft 365</a></li>
+                    <li><a href="https://powerplatform.microsoft.com/en-us/">Microsoft Power Platform</a></li>
                 </ul>
             </div>
-    
-            <div class="footer-items">
-                <p class="footer-p">Business</p>
+
+            <div class="footer-col">
+                <h4>Developer &amp; IT</h4>
                 <ul>
-                    <li><a href="https://www.microsoft.com/en-us/microsoft-cloud" class="footer-link">Microsoft Cloud</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/security" class="footer-link">Microsoft Security</a></li>
-                    <li><a href="https://dynamics.microsoft.com/en-us/" class="footer-link">Dynamics 365</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/microsoft-365/business/" class="footer-link">Microsoft 365</a></li>
-                    <li><a href="https://powerplatform.microsoft.com/en-us/" class="footer-link">Microsoft Power Platform</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" class="footer-link">Microsoft Teams</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/industry" class="footer-link">Microsoft Industry</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore" class="footer-link">Small Business</a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/">Azure</a></li>
+                    <li><a href="https://developer.microsoft.com/en-us/">Developer Center</a></li>
+                    <li><a href="https://learn.microsoft.com/docs/">Documentation</a></li>
+                    <li><a href="https://learn.microsoft.com/">Microsoft Learn</a></li>
+                    <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
                 </ul>
             </div>
-    
-            <div class="footer-items">
-                <p class="footer-p">Developer & IT</p>
+
+            <div class="footer-col">
+                <h4>Company</h4>
                 <ul>
-                    <li><a href="https://azure.microsoft.com/en-us/" class="footer-link">Azure</a></li>
-                    <li><a href="https://developer.microsoft.com/en-us/" class="footer-link">Developer Center</a></li>
-                    <li><a href="https://learn.microsoft.com/docs/" class="footer-link">Documentation</a></li>
-                    <li><a href="https://learn.microsoft.com/" class="footer-link">Microsoft Learn</a></li>
-                    <li><a href="https://techcommunity.microsoft.com/" class="footer-link">Microsoft Tech Community</a></li>
-                    <li><a href="https://azuremarketplace.microsoft.com/en-us/" class="footer-link">Azure Marketplace</a></li>
-                    <li><a href="https://appsource.microsoft.com/en-us/" class="footer-link">AppSource</a></li>
-                    <li><a href="https://visualstudio.microsoft.com/" class="footer-link">Visual Studio</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-items">
-                <p class="footer-p">Company</p>
-                <ul>
-                    <li><a href="https://careers.microsoft.com/" class="footer-link">Careers</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/about" class="footer-link">About Microsoft</a></li>
-                    <li><a href="https://news.microsoft.com/" class="footer-link">Company news</a></li>
-                    <li><a href="https://privacy.microsoft.com/en-us" class="footer-link">Privacy at Microsoft</a></li>
-                    <li><a href="https://www.microsoft.com/investor/default.aspx" class="footer-link">Investors</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/diversity/" class="footer-link">Diversity and inclusion</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/accessibility" class="footer-link">Accessibility</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/sustainability/" class="footer-link">Sustainability</a></li>
+                    <li><a href="https://careers.microsoft.com/">Careers</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/about">About Microsoft</a></li>
+                    <li><a href="https://news.microsoft.com/">Company news</a></li>
+                    <li><a href="https://privacy.microsoft.com/en-us">Privacy at Microsoft</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/sustainability/">Sustainability</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="footer-copyright">
-            <div class="info">
-                <a class="footer-copyright-link footer-link" href="https://www.microsoft.com/en-us/locale">English (United States)</a>
-                <a class="footer-copyright-link" id="ypc" href="https://aka.ms/yourcaliforniaprivacychoices">Your Privacy Choices</a>
+        <div class="footer-bottom">
+            <div class="footer-region">
+                <a href="https://www.microsoft.com/en-us/locale">English (United States)</a>
+                <a href="https://aka.ms/yourcaliforniaprivacychoices">Your Privacy Choices</a>
             </div>
-
-            <div class="copyright">
-                <a class="footer-copyright-link footer-link" href="https://www.microsoft.com/en-us/sitemap1.aspx">Sitemap</a>
-                <a class="footer-copyright-link footer-link" href="https://support.microsoft.com/contactus">Contact Microsoft</a>
-                <a class="footer-copyright-link footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy</a>
-                <a class="footer-copyright-link footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a>
-                <a class="footer-copyright-link footer-link" href="https://go.microsoft.com/fwlink/?linkid=2196228">Trademarks</a>
-                <a class="footer-copyright-link footer-link" href="https://go.microsoft.com/fwlink/?linkid=2196227">Safety & eco</a>
-                <a class="footer-copyright-link footer-link" href="https://www.microsoft.com/en-us/legal/compliance/recycling">Recycling</a>
-                <a class="footer-copyright-link footer-link" href="https://choice.microsoft.com/">About our ads</a>
-                <p style="display: inline-block;">© Microsoft 2024</p>
+            <div class="footer-legal">
+                <a href="https://www.microsoft.com/en-us/sitemap1.aspx">Sitemap</a>
+                <a href="https://support.microsoft.com/contactus">Contact Microsoft</a>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy</a>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=2196228">Trademarks</a>
+                <span>© Microsoft 2026</span>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
